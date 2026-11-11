@@ -256,8 +256,6 @@ print("\nSaved full edge table -> whole_connectome_stage1.csv")
 
 # =========================================================
 # WHOLE-CONNECTOME EXPLORATORY - SESSION (pre->post) MAIN EFFECT
-# Justified BECAUSE the interaction was null: no evidence HV/LV
-# change differently, so pool all subjects for the common change.
 # One-sample (paired) t-test of Delta z = post - pre vs 0, per edge.
 # =========================================================
 DELTA = np.vstack([HV, LV])              # (38, n_edge), reuse Stage-1 deltas
